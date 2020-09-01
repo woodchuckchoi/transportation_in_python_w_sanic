@@ -1,24 +1,22 @@
-# yellowBus
-Yellow Bus implementation in Python w/ Sanic
+CREATE DATABASE yellowbus;
+ALTER DATABASE [DB명] DEFAULT CHARACTER SET utf8;
 
-## API Guide
+USE yellowbus;
 
-## SQL Guide
+CREATE TABLE stop (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `stop_name` VARCHAR(32) NOT NULL,
+    PRIMARY KEY (`id`)
+)
+DEFAULT CHARACTER SET = utf8;
 
-### route
-
-```SQL
 CREATE TABLE route (
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
     `route_name` VARCHAR(32) NOT NULL,
     PRIMARY KEY (`id`)
 )
 DEFAULT CHARACTER SET = utf8;
-```
 
-### route_order
-
-```SQL
 CREATE TABLE route_order (
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
     `route_id` INT UNSIGNED NOT NULL,
@@ -28,15 +26,3 @@ CREATE TABLE route_order (
     FOREIGN KEY (`stop_id`) REFERENCES stop(`id`) ON DELETE CASCADE,
     FOREIGN KEY (`route_id`) REFERENCES route(`id`) ON DELETE CASCADE
 );
-```
-
-### stop
-
-```SQL
-CREATE TABLE stop (
-    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    `stop_name` VARCHAR(32) NOT NULL,
-    PRIMARY KEY (`id`)
-)
-DEFAULT CHARACTER SET = utf8;
-```
