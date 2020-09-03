@@ -237,13 +237,13 @@ DEFAULT CHARACTER SET = utf8;
 ---
 ---
 
-[create1]: https://github.com/woodchuckchoi/yellowbus/images/create1.png "create1"
-[create2]: https://github.com/woodchuckchoi/yellowbus/images/create2.png "create2"
-[create3]: https://github.com/woodchuckchoi/yellowbus/images/create3.png "create3"
-[create4]: https://github.com/woodchuckchoi/yellowbus/images/create4.png "create4"
-[delete1]: https://github.com/woodchuckchoi/yellowbus/images/delete1.png "delete1"
-[delete2]: https://github.com/woodchuckchoi/yellowbus/images/delete2.png "delete2"
-[modify1]: https://github.com/woodchuckchoi/yellowbus/images/modify1.png "modify1"
-[modify2]: https://github.com/woodchuckchoi/yellowbus/images/modify2.png "modify2"
-[allroute1]: https://github.com/woodchuckchoi/yellowbus/images/allroute1.png "allroute1"
-[oneroute1]: https://github.com/woodchuckchoi/yellowbus/images/oneroute1.png "oneroute1"
+[create1]: https://github.com/woodchuckchoi/yellowBus/images/create1.png "create1"
+[create2]: https://github.com/woodchuckchoi/yellowBus/images/create2.png "create2"
+[create3]: https://github.com/woodchuckchoi/yellowBus/images/create3.png "create3"
+[create4]: https://github.com/woodchuckchoi/yellowBus/images/create4.png "create4"
+[delete1]: https://github.com/woodchuckchoi/yellowBus/images/delete1.png "delete1"
+[delete2]: https://github.com/woodchuckchoi/yellowBus/images/delete2.png "delete2"
+[modify1]: https://github.com/woodchuckchoi/yellowBus/images/modify1.png "modify1"
+[modify2]: https://github.com/woodchuckchoi/yellowBus/images/modify2.png "modify2"
+[allroute1]: https://github.com/woodchuckchoi/yellowBus/images/allroute1.png "allroute1"
+[oneroute1]: https://github.com/woodchuckchoi/yellowBus/images/oneroute1.png "oneroute1"

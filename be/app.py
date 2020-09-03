@@ -47,7 +47,7 @@ async def create_route(request):
         assert list(map(lambda x: x['order'], request.json['courses'])) == list(range(1, len(courses)+1)) and len(courses) <= 10, 'Order is not valid.'
     
     except AssertionError as err:
-        return json({'result': str(err)}, status=#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
+        return json({'result': str(err)}, status=400)
 
     async with app.pool.acquire() as conn:
         async with conn.cursor() as cur:
@@ -71,7 +71,7 @@ async def create_route(request):
             
             except Exception as err:
                 await conn.rollback()
-                return json({'result': str(err)})
+                return json({'result': str(err)}, status=400)
 
     return json({'result': 'success'})
 
@@ -106,7 +106,7 @@ async def create_route(request, route_id):
                     await conn.commit()
         
     except Exception as err:
-        return json({'result': str(err)})
+        return json({'result': str(err)}, status=400)
 
     return json({'result': 'success'})
 
@@ -136,10 +136,10 @@ async def create_route(request, route_id):
                         ]
                     }
     except AssertionError as err:
-        return json({'result': str(err)})
+        return json({'result': str(err)}, status=400)
     
     except Exception as err:
-        return json({'result': str(err)})
+        return json({'result': str(err)}, status=400)
 
     return json(ret)
 
@@ -154,6 +154,6 @@ async def create_route(request, route_id):
                     await conn.commit()
     
     except Exception as err:
-        return json({'result': str(err)})
+        return json({'result': str(err)}, status=400)
 
     return json({'result': 'success'})
