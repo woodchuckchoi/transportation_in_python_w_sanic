@@ -1,2 +1,0 @@
-from sanic import Blueprint
-
