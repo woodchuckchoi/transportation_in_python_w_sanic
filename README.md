@@ -179,8 +179,6 @@ Response:
 ---
 ---
 
-</br></br></br></br></br>
-
 ## SQL Guide
 
 [./db/init.sql](./db/init.sql)을 통해서 MySQL init
