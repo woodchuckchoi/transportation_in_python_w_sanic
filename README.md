@@ -1,5 +1,5 @@
 # yellowBus
-Yellow Bus implementation in Python w/ Sanic
+Transport sharing implementation in Python w/ Sanic
 
 ## Quick Start
 
